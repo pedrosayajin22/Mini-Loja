@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+:root {
+    --container: 1280px;
+    --Width100: 100%;
+
+}
+
+.container {
+    max-width: var(--container);
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    max-width: var(--container);
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+header .login {
+    display: flex;
+}
+
+.login h2 {
+    padding-right: 20px;
+}
+
+section nav {
+    margin-top: 10px;
+
+}
+
+section nav::after {
+    content: "";
+    display: block;
+    width: var(--Width100);
+    height: 3px;
+    background-color: rgb(128, 128, 128);
+}
+
+section nav::before {
+    content: "";
+    display: block;
+    width: var(--Width100);
+    height: 3px;
+    background-color: rgb(128, 128, 128);
+}
+
+section nav ul {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    padding: 20px 40px 20px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    font-weight: 400;
+}
+
+.vitrine>h2 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.produtos-wrapper {
+    max-width: var(--container);
+}
+.slider{
+    text-align: center;
+}
+.slider img {
+    margin-top: 5px;
+    width: 60%;
+    height: 400px;
+}
+.carrinho {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.carrinho i{
+    font-size: 40px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.abaCarrinho{
+    display: none;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 30%;
+    height: 90%;
+    max-height: 605px;
+    background-color: aqua;
+    z-index: 999;
+}
+
+.abaCarrinho .aba{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+}
+.abaCarrinho .aba i{
+    font-size: 25px;
+    cursor: pointer;
+
+}
+    
