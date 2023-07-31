@@ -52,8 +52,10 @@ function atualizarCarinho() {
     items.map((val) => {
         if (val.quantidade > 0) {
             containerCarrinho.innerHTML += `
+            <div class="carrinho-lista">
+            <img src='`+val.img+`'/>
             <p>`+val.nome+` | quantidade : `+val.quantidade+`
-            <hr>
+            </div>
         
         `;
         }
